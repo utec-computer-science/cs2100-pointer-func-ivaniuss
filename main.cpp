@@ -63,8 +63,7 @@ int main(){
 //    for(const auto i : _array_3)
 //        cout << i << " ";
 //    cout << endl;
-//    //	// PRINT
-
+//
 	_bubblesort_(_array_4,_b_char_,6);
     for(const auto i : _array_4)
         cout << i << " ";
