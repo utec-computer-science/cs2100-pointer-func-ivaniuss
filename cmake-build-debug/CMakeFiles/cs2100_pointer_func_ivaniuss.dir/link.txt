@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cs2100_pointer_func_ivaniuss.dir/main.cpp.o  -o cs2100_pointer_func_ivaniuss 
