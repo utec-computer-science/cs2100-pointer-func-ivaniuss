@@ -36,7 +36,10 @@ void  _b_double_ (void * _vector_, int _i,int _k){
 }
 
 void  _b_char_ (void * _vector_, int _i,int _k){
-    // TODO:  QUE COSA PONGO AQUI?
+
+    if ((int)((char *)_vector_)[_i] > (int)((char *)_vector_)[_i + 1]){
+        swap(((char *)_vector_)[_i], ((char *)_vector_)[_i + 1]);
+    }
 }
 
 int main(){
@@ -55,15 +58,17 @@ int main(){
 //    for(const auto i : _array_2)
 //        cout << i << " ";
 //    cout << endl;
+//
+//    _bubblesort_(_array_3,_b_double_,5);
+//    for(const auto i : _array_3)
+//        cout << i << " ";
+//    cout << endl;
+//    //	// PRINT
 
-
-    _bubblesort_(_array_3,_b_double_,5);
-    for(const auto i : _array_3)
+	_bubblesort_(_array_4,_b_char_,6);
+    for(const auto i : _array_4)
         cout << i << " ";
     cout << endl;
-    //	// PRINT
-//	_bubblesort_(_array_4,_b_char_,6);
-//	// PRINT
 
     return 0;
 }
